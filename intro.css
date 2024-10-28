@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+body {
+    text-shadow: 8px 8px 10px #0000008c;
+    background-color: #343a40;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+    font-family: "DM Serif Display";
+}
+header {
+    width: 100%;
+    
+}
+main {
+    position: relative;
+    display: flex;
+    height: 100vh; 
+    width: 100%;
+    z-index: 999;
+    overflow-y: scroll;
+}
+
+.introPage {
+    margin-top: 300px;
+    width: 100%;
+}
+
+.introPage h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.name {
+    overflow: hidden;
+    position: relative;
+    animation: typewriter 4s stops(44) 1s 1 normal both,
+        blinkTextCursor 400ms steps(44) infinite normal;
+}
+.enter {
+    height: 60px;
+    width: 100px;
+    opacity: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 660px;
+    background: rgb(26, 25, 25);
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+.enter:hover{
+    transform: translateY(-3px);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navBar{
+    height: 60px;
+    width: 100%;
+}
+.navi li{
+    width: 12%;
+    float: left;
+    margin-left: 150px;
+    margin-top: 15px;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+.aboutPage{
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    overflow-y: scroll;
+}
+.engineer{
+    height: 320px;
+    width: 20%;
+    margin-left: 580px;
+    margin-top: 80px;
+}
+.aboutPage p{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+.projectsPage{
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    overflow-y: scroll;
+}
+#works{
+    height: 300px;
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+.wuTang > img{
+    width: 80%;
+    height: 80%;
+    margin-left: 80px;
+}
+.toDoList > img{
+    width: 80%;
+    height: 80%;
+    margin-left: 80px;
+}
+.ticTacToe > img{
+    width: 80%;
+    height: 100%;
+    margin-left: 80px;
+}
+.weather > img{
+    width: 80%;
+    height: 100%;
+    margin-left: 80px;
+}
+.visitWebsite{
+    height: 35px;
+    width: 10%;
+    border-radius: 30%;
+    background: rgb(26, 25, 25);
+    font-family: "DM Serif Display";
+    margin-left: 320px;
+}
+.contactPage{
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    overflow-y: scroll;
+}
+form{
+    margin: 0 0 2rem 0;
+    border: 1px solid white;
+    background: white;
+    width: 50%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 360px;
+    
+}
+label, input{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+.message{
+    height: 200px;
+    width: 50%;
+}
+.actions li input{
+    height: 25px;
+    width: 20%;
+    font-family: "DM Serif Display";
+    cursor: pointer;
+}
+h3{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.socials{
+    height: 25px;
+    width: 4%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.aboutInfo{
+    border: 5px double white;
+    margin: 0 500px;
+    animation-name: slidingIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.projectInfo{
+    border: 5px double white;
+    margin: 0 500px;
+    animation-name: slidingIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.contactInfo{
+    border: 5px double white;
+    margin: 0 500px;
+    animation-name: slidingIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+p{
+    color: white;
+    text-align: center;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+@keyframes slidingIn {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(80px);
+    }
+}

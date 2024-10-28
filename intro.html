@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <title>Chenda Semerjian-Krants</title>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navBar" id="naviBar">
+            <ul class="navi">
+                <li class="homeNav"><a href="#home">Home</a></li>
+                <li class="aboutMeNav"><a href="#aboutMe">About Me</a></li>
+                <li class="projectsNav"><a href="#projects">Projects</a></li>
+                <li class="contactMeNav"><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="introPage">
+            <h1 class="name">Chenda Semerjian-Krants</h1>
+            <h2><span class="career"></span></h2>
+
+            <button class="enter"><a href="#secondNav" class="linkToPage">Enter</a></button>
+        </section>
+    </main>
+    <section class="aboutPage" id="aboutMe">
+        <div class="navBar" id="naviBar">
+            <ul class="navi">
+                <li class="homeNav"><a href="#home">Home</a></li>
+                <li class="aboutMeNav"><a href="#aboutMe">About Me</a></li>
+                <li class="projectsNav"><a href="#projects">Projects</a></li>
+                <li class="contactMeNav"><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </div>
+        <h3 class="aboutInfo">About Me</h3>
+        <img src="portfolio_image.jpeg" alt="photo of chenda" class="engineer">
+        <p>Welcome to my website! I’m Chenda, a passionate software engineer with a deep love for problem-solving and
+            innovation. I thrive on tackling new challenges, continuously learning, and refining my skills in both
+            front-end and back-end development. With hands-on experience in creating intuitive user interfaces and
+            building efficient, scalable back-end systems, I’m always excited to explore the latest technologies and
+            tools that drive the tech industry forward. I am committed to delivering impactful solutions that make a
+            difference. Beyond just the technical side, I believe that curiosity and collaboration are key in software
+            development.</p>
+    </section>
+    <section class="projectsPage" id="projects">
+        <div class="navBar" id="naviBar">
+            <ul class="navi">
+                <li class="homeNav"><a href="#home">Home</a></li>
+                <li class="aboutMeNav"><a href="#aboutMe">About Me</a></li>
+                <li class="projectsNav"><a href="#projects">Projects</a></li>
+                <li class="contactMeNav"><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </div>
+        <h3 class="projectInfo">Projects</h3>
+        <div class="wuTang" id="works">
+            <img src="wutang.jpg" alt="">
+            <p>Personalized Name Creation Tool</p>
+            <button class="visitWebsite">
+                <a href="https://wu-tang.netlify.app/" target="_blank">Visit</a>
+            </button>
+        </div>
+        <div class="toDoList" id="works">
+            <img src="todolist.jpg" alt="">
+            <p>Task Manager</p>
+            <button class="visitWebsite">
+                <a href="https://the-list-manager.netlify.app/" target="_blank">Visit</a>
+            </button>
+        </div>
+        <div class="ticTacToe" id="works">
+            <img src="tictactoe.jpg" alt="">
+            <p>Strategic Grid Game Application</p>
+            <button class="visitWebsite">
+                <a href="https://matching-tic-tac-toe-game.netlify.app/" target="_blank">Visit</a>
+            </button>
+        </div>
+        <div class="weather" id="works">
+            <img src="weather.jpg" alt="">
+            <p>Weather Data Service Integration</p>
+            <button class="visitWebsite">
+                <a href="https://weather-data-service.netlify.app/" target="_blank">Visit</a>
+            </button>
+        </div>
+    </section>
+    <section class="contactPage" id="contactMe">
+        <div class="navBar" id="naviBar">
+            <ul class="navi">
+                <li class="homeNav"><a href="#home">Home</a></li>
+                <li class="aboutMeNav"><a href="#aboutMe">About Me</a></li>
+                <li class="projectsNav"><a href="#projects">Projects</a></li>
+                <li class="contactMeNav"><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </div>
+        <h3 class="contactInfo">Contact Me</h3>
+        <form action="text">
+            <label for="">
+                Name<input type="text" placeholder="Enter your Name">
+            </label>
+            <label for="">
+                Email<input type="text" placeholder="Enter your Email">
+            </label>
+            <label for="">
+                Message <input type="text" placeholder="Message" class="message">
+            </label>
+            <ul class="actions">
+                <li><input type="submit" name="submit" id="submission"></li>
+            </ul>
+
+            <a href="https://github.com/semerjianchenda" target="_blank">
+                <img src="github.jpg" alt="github" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/chendasemerjiankrants/" target="_blank">
+                <img src="linkedin_image.jpg" alt="linkedin" class="socials">
+            </a>
+            <a href="https://x.com/Semerjian_Codes" target="_blank">
+                <img src="twitter_image.jpg" alt="twitter" class="socials">
+            </a>
+        </form>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".career", {
+            strings: ["Cat Lover", "Computer", "Software Engineer"],
+            typeSpeed: 90,
+            backSpeed: 80
+        })
+    </script>
+    <script rel="text/javascript" src=""></script>
+</body>
+
+</html>
