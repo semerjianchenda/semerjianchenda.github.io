@@ -98,20 +98,18 @@
             </ul>
         </div>
         <h3 class="contactInfo">Contact Me</h3>
-        <form action="text">
-            <label for="">
+        <form name="contactForm" method="POST" netlify>
+            <label for="name">
                 Name<input type="text" placeholder="Enter your Name">
             </label>
-            <label for="">
+            <label for="email">
                 Email<input type="text" placeholder="Enter your Email">
             </label>
-            <label for="">
+            <label for="message">
                 Message <input type="text" placeholder="Message" class="message">
             </label>
-            <ul class="actions">
-                <li><input type="submit" name="submit" id="submission"></li>
-            </ul>
-
+        
+                <button type="submit" name="submit" id="submission">Submit</button>
             <a href="https://github.com/semerjianchenda" target="_blank">
                 <img src="github.jpg" alt="github" class="socials">
             </a>
